@@ -42,11 +42,11 @@
 
 Ветка `fix` создана от коммита «Prepare to delete and move» (хеш: 2fb96c6):
 
-```bash
+ ```bash
 git checkout 2fb96c6
 git switch -c fix
 
-
+```
 ## Задание 4: Работа в PyCharm
 
 Выполнены действия в интерфейсе PyCharm:
