@@ -1,7 +1,7 @@
 # Домашнее задание: Основы Git
 
-Студент:** Chehlov M.V.  
-Репозитории:**
+Студент: Chehlov M.V.  
+Репозитории:
 - GitHub: [Chehlov1M/devops-netology](https://github.com/Chehlov1M/devops-netology)
 - GitLab: [devops-group55731/devops-netology](https://gitlab.com/devops-group55731/devops-netology)
 
