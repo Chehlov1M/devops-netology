@@ -1,39 +1,72 @@
-# devops-netology
+# Домашнее задание: Основы Git
 
-Репозиторий для курса по системам контроля версий.  
-Автор: Misha Chehlov
+**Студент:** Chehlov M.V.  
+**Репозитории:**
+- GitHub: [Chehlov1M/devops-netology](https://github.com/Chehlov1M/devops-netology)
+- GitLab: [devops-group55731/devops-netology](https://gitlab.com/devops-group55731/devops-netology)
 
-## История коммитов
+---
 
-| Коммит | Описание |
-|--------|----------|
-| Initial commit | Создан GitHub при инициализации репозитория |
-| First commit | Правки в README.md (добавлена история коммитов) |
-| Added gitignore | Добавлены .gitignore и описание в README |
-| Prepare to delete and move | Созданы will_be_deleted.txt и will_be_moved.txt |
-| Moved and deleted | Удален will_be_deleted.txt, переименован will_be_moved.txt → has_been_moved.txt |
+## Задание 1. Подключение GitHub и GitLab
 
+Настроены два удалённых репозитория: `origin` (GitHub) и `gitlab` (GitLab). Это позволяет работать с проектом в распределённой среде и синхронизировать изменения между платформами.
 
-## Какие файлы игнорируются в terraform/.gitignore (расшифровка правил)
+### Статус remote
 
-В файле `terraform/.gitignore` прописаны следующие правила:
-
-- `**/.terraform/*` — игнорируются все файлы и папки внутри любой директории `.terraform` (рекурсивно).  
-  Звёздочка `*` означает «любое количество любых символов», а двойная звёздочка `**` — «в любой вложенной папке».
-- `*.tfstate` и `*.tfstate.*` — игнорируются файлы состояний Terraform с любым расширением после `.tfstate`.  
-  Здесь `*` заменяет любую последовательность символов до или после указанного фрагмента.
-- `crash.log` и `crash.*.log` — игнорируется файл `crash.log`, а также любые файлы, где между `crash` и `.log` может находиться произвольный текст.  
-  В этом случае `*` выступает как «любой фрагмент имени файла».
-- `override.tf`, `override.tf.json`, `*_override.tf` — игнорируются файлы переопределений с фиксированными именами, а также все файлы, оканчивающиеся на `_override.tf`.  
-  Символ `*` в начале означает «любая префиксная часть имени».
-- `*.tfvars` — игнорируются любые файлы переменных.  
-  `*` здесь покрывает любое имя файла перед расширением `.tfvars`.
+```bash
+git remote -v
 
 
-## Результаты выполнения задания
+## Доступ к GitLab
 
-### Структура репозитория
-![Структура репозитория](repo_structure.png)
+Для работы с репозиторием в GitLab используется Personal Access Token с областью действия `write_repository`.  
+Токен не хранится в коде и не коммитится.
 
-### История коммитов
-![История коммитов](git_log.png)
+## Подключение GitLab
+
+- Remote: `gitlab` добавлен через HTTPS.
+- Репозиторий: Public, без начального README.
+- Доступ: через Personal Access Token с правами `write_repository`.
+
+## Задание 2: Теги
+
+Созданы два типа тегов:
+- `v0.0` — лёгковесный тег (просто указатель на коммит).
+- `v0.1` — аннотированный тег с сообщением: `"Version 0.1 with .gitignore and README updates"`.
+
+Теги запушены в оба репозитория: GitHub и GitLab.
+
+### Скриншоты
+
+#### Теги в GitLab (наглядно видны оба типа)
+![Теги в GitLab](images/gitlab-tags.png)
+
+#### Теги/Releases в GitHub
+![Теги в GitHub](images/github-releases.png)
+
+## Задание 3: Ветка fix
+
+Ветка `fix` создана от коммита «Prepare to delete and move» (хеш: 2fb96c6):
+
+```bash
+git checkout 2fb96c6
+git switch -c fix
+
+
+## Задание 4: Работа в PyCharm
+
+Выполнены действия в интерфейсе PyCharm:
+- Открыт проект `devops-netology`.
+- Активная ветка: `fix`.
+- Добавлено описание в `README.md`.
+- Изменения зафиксированы через Git → Commit с сообщением: `Add note about PyCharm workflow for assignment 4`.
+- Выполнен Push в оба репозитория (GitHub и GitLab).
+
+### Скриншоты
+
+#### Git-интерфейс в PyCharm: Local Changes, Commit Message
+![PyCharm Git Commit](images/pycharm-git-commit.png)
+
+#### Новый коммит в истории (GitHub)
+![GitHub Commits](images/github-commits.png)
+
