@@ -11,22 +11,16 @@
 
 Настроены два удалённых репозитория: `origin` (GitHub) и `gitlab` (GitLab). Это позволяет работать с проектом в распределённой среде и синхронизировать изменения между платформами.
 
-### Статус remote
-
-```bash
-git remote -v
-
-
-## Доступ к GitLab
-
-Для работы с репозиторием в GitLab используется Personal Access Token с областью действия `write_repository`.  
-Токен не хранится в коде и не коммитится.
-
 ## Подключение GitLab
 
 - Remote: `gitlab` добавлен через HTTPS.
 - Репозиторий: Public, без начального README.
 - Доступ: через Personal Access Token с правами `write_repository`.
+
+Для работы с репозиторием в GitLab используется Personal Access Token с областью действия `write_repository`.  
+Токен не хранится в коде и не коммитится.
+
+
 
 ## Задание 2: Теги
 
@@ -67,6 +61,5 @@ git switch -c fix
 #### Git-интерфейс в PyCharm: Local Changes, Commit Message
 ![PyCharm Git Commit](images/pycharm-git-commit.png)
 
-#### Новый коммит в истории (GitHub)
-![GitHub Commits](images/github-commits.png)
+
 
