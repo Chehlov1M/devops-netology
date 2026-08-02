@@ -26,10 +26,10 @@
 Теги запушены в оба репозитория: GitHub и GitLab.
 
 Теги в GitLab (наглядно видны оба типа)
-![Теги в GitLab](images/gitlab-tags.png)
+![Теги в GitLab](tags_gitlab.png)
 
 Теги/Releases в GitHub
-![Теги в GitHub](images/github-releases.png)
+![Теги в GitHub](tags_githab.png)
 
 
 ## Задание 3: Ветка fix
@@ -37,10 +37,10 @@
 Ветка `fix` создана от коммита «Prepare to delete and move» (хеш: 2fb96c6):
 
 Ветка в GitLab 
-![Ветка в GitLab]()
+![Ветка в GitLab](fix_gitlab.png)
 
 Ветка в GitHub
-![Ветка в GitHub]()
+![Ветка в GitHub](fix_githab.png)
 
 
 ## Задание 4: Работа в PyCharm
@@ -51,7 +51,7 @@
 - Добавлено описание в `README.md`.
 
 Git-интерфейс в PyCharm: Local Changes, Commit Message
-![PyCharm Git Commit](images/pycharm-git-commit.png)
+![PyCharm Git Commit](pycharm_git_commit.png)
 
 
 
