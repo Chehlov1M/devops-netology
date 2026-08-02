@@ -30,7 +30,7 @@
 
 Теги запушены в оба репозитория: GitHub и GitLab.
 
-### Скриншоты
+Скриншоты
 
 #### Теги в GitLab (наглядно видны оба типа)
 ![Теги в GitLab](images/gitlab-tags.png)
@@ -47,6 +47,13 @@ git checkout 2fb96c6
 git switch -c fix
 
  ```
+Скриншоты
+
+#### Теги в GitLab (наглядно видны оба типа)
+![Теги в GitLab](images/gitlab-tags.png)
+
+#### Теги/Releases в GitHub
+![Теги в GitHub](images/github-releases.png)
 
 ## Задание 4: Работа в PyCharm
 
