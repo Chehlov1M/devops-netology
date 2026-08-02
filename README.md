@@ -11,13 +11,11 @@
 
 Настроены два удалённых репозитория: `origin` (GitHub) и `gitlab` (GitLab). Это позволяет работать с проектом в распределённой среде и синхронизировать изменения между платформами.
 
-Подключение GitLab
-
-- Remote: `gitlab` добавлен через HTTPS.
+- Remote: `gitlab`, `githab` добавлен через HTTPS.
 - Репозиторий: Public, без начального README.
 - Доступ: через Personal Access Token с правами `write_repository`.
 
-Для работы с репозиторием в GitLab используется Personal Access Token с областью действия `write_repository`.  
+Для работы с репозиторием в GitLab и Githab используется Personal Access Token с областью действия `write_repository`.  
 Токен не хранится в коде и не коммитится.
 
 
