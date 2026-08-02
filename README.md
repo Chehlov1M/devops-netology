@@ -32,10 +32,10 @@
 
 Скриншоты
 
-#### Теги в GitLab (наглядно видны оба типа)
+Теги в GitLab (наглядно видны оба типа)
 ![Теги в GitLab](images/gitlab-tags.png)
 
-#### Теги/Releases в GitHub
+Теги/Releases в GitHub
 ![Теги в GitHub](images/github-releases.png)
 
 ## Задание 3: Ветка fix
@@ -49,10 +49,10 @@ git switch -c fix
  ```
 Скриншоты
 
-#### Теги в GitLab (наглядно видны оба типа)
+Теги в GitLab (наглядно видны оба типа)
 ![Теги в GitLab](images/gitlab-tags.png)
 
-#### Теги/Releases в GitHub
+Теги/Releases в GitHub
 ![Теги в GitHub](images/github-releases.png)
 
 ## Задание 4: Работа в PyCharm
@@ -64,9 +64,9 @@ git switch -c fix
 - Изменения зафиксированы через Git → Commit с сообщением: `Add note about PyCharm workflow for assignment 4`.
 - Выполнен Push в оба репозитория (GitHub и GitLab).
 
-### Скриншоты
+Скриншоты
 
-#### Git-интерфейс в PyCharm: Local Changes, Commit Message
+Git-интерфейс в PyCharm: Local Changes, Commit Message
 ![PyCharm Git Commit](images/pycharm-git-commit.png)
 
 
