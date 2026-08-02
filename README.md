@@ -46,7 +46,8 @@
 git checkout 2fb96c6
 git switch -c fix
 
-```
+ ```
+
 ## Задание 4: Работа в PyCharm
 
 Выполнены действия в интерфейсе PyCharm:
